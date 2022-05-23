@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>🐠 Fish preloader 🐠</title>
     <style>
         * {
             margin: 0;
@@ -29,7 +29,7 @@
             height: 222px;
             background: rgba(84, 131, 255, 0.47) url("wave.svg") no-repeat center -32px;
             border-radius: 10px;
-            animation: tie 5s infinite ease-out;
+            animation: tie 5s 1 ease-out forwards;
             animation-delay: 1s;
             position: relative;
             display: flex;
@@ -80,6 +80,8 @@
             position: relative;
             top: 54px;
             left: 54px;
+            animation: move 1s infinite ease-in-out;
+            animation-delay: 5.3s;
         }
 
         .preloader__text {
@@ -112,6 +114,34 @@
                 top: 111px;
                 background: rgba(84, 131, 255, 0.47) url("wave.svg") no-repeat center 0px;
                 background-size: 100%;
+            }
+        }
+
+        @keyframes move {
+            0%{
+                top: 54px;
+                left: 54px;
+                transform: rotate(0);
+            }
+            25% {
+                top: 54px;
+                left: 50px;
+                transform: rotate(-15deg);
+            }
+            50% {
+                top: 50px;
+                left: 50px;
+                transform: rotate(0);
+            }
+            75% {
+                top: 50px;
+                left: 50px;
+                transform: rotate(-15deg);
+            }
+            100% {
+                top: 54px;
+                left: 54px;
+                transform: rotate(0);
             }
         }
     </style>

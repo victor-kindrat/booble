@@ -8,8 +8,9 @@ document.body.onload = function () {
     }, 5000)
 }
 
-$('.main__search-btn').click(function (){
+$('.main__search-btn').click(function (e){
     if ($(".main__input").val() !== '') {
-        $(this).attr('href', 'https://www.google.com/search?q=' + $('.main__input').val())
+        $(this).attr('href', 'https://www.google.com/search?q=' + $('.main__input').val());
+        $(`.main__input`).val('')
     }
 })

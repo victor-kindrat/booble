@@ -157,6 +157,27 @@
     text-align: center;
 }
 
+.header {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("./images/main/fishesbg.png") 350% 0 repeat no-repeat;
+    -webkit-background-size: 350%;
+    background-size: 350%;
+    animation: bgmove infinite 60s ease-in-out;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 350% 0;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
 .main__headline-group {
     width: 100%;
     display: flex;

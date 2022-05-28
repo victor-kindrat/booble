@@ -1,4 +1,4 @@
-# Booble. fish-preloader
+# Booble with fish-preloader
 HTML/CSS project. Animation of the ice preloader with Booble search. While ice melting, fish is released from the trap 🐠
 ---
 ### Preview:
